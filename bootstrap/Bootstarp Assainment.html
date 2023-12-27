@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+     #demo
+        {
+            padding: 100px 150px 50px 50px;
+        }
+        .gol
+        {
+          height: 100px;
+          width: 100px;
+        }
+        .card
+        {
+          align-items: center;
+        }
+        .blow1
+        {
+          height: 300px;
+          width: 300px;
+          line-height: 300px;
+        }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <h3>Q 1) What are the advantages of Bootstrap ?</h3>
+
+    ==>
+    <p>Having a website is a prerequisite for every small and big business. But having stylish and efficient websites
+      designed in a small time frame is the need of the hour.</p>
+
+    <p>Due to this reason, User Interface (UI) designers and web designers choose to take up code reusability. </p>
+
+    <p>With this, the same HTML code is used for website projects, saving time and effort. The proponents in such
+      backdrop are the UI frameworks, and the key player amid this is Bootstrap. The varied advantages of Bootstrap make
+      it one of the most popular among developers.</p>
+
+
+    <hr>
+    <hr>
+
+    <h3>Q 2) What is a Bootstrap Container,and how does it work ?</h3>
+
+    ==>
+
+    <p> They are two type of Container </p>
+    1 ) Container (only Container left-right and top-bottom side se padding deta he OR fixed width ke sath aata he )
+    <br><br>
+    2 ) Container-fluid (Container-fluid top-bottom se padding deta he OR ye full width ke sath aata he )
+
+    <br><br>
+
+    <p> <b>How does it work ?</b> </p>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:void(0)">Carousel</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search">
+            <button class="btn btn-primary" type="button">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ********************************** -->
+    <div id="demo" class="carousel slide bg-secondary " data-bs-ride="carousel">
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
+      
+      <div align="right" class="carousel-inner">
+        <div class="carousel-item active  gallery">
+          <h2>One more for good measure.</h2>
+          <p>Cras justo odio, dapibus ac facilisis in,eget quam.Donec id elit non mi porta gravida at eget metus</p>
+          <p>Nullam id dolor id nibhultricies vehicula ut id elit</p>
+          <button type="button" class="btn btn-primary">Browse gallery</button>
+        </div>
+        <div class="carousel-item">
+          <h2>One more for good measure.</h2>
+          <p>Cras justo odio, dapibus ac facilisis in,eget quam.Donec id elit non mi porta gravida at eget metus</p>
+          <p>Nullam id dolor id nibhultricies vehicula ut id elit</p>
+          <button type="button" class="btn btn-primary">Browse gallery</button>
+        </div>
+        <div class="carousel-item">
+          <h2>One more for good measure.</h2>
+          <p>Cras justo odio, dapibus ac facilisis in,eget quam.Donec id elit non mi porta gravida at eget metus</p>
+          <p>Nullam id dolor id nibhultricies vehicula ut id elit</p>
+          <button type="button" class="btn btn-primary">Browse gallery</button>
+        </div>
+      </div>
+      
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    
+
+<!-- ************************************ -->
+<div class="container ">
+<div class="container row  justify-content-evenly ">
+<div class=" text-center col-xl-3 col-md-5">
+  <div class="card pt-5 " >
+   <div class="gol bg-secondary rounded-circle"></div>
+    <div class="">
+      <h4>Haeding</h4>
+      <p class="">Lorem ipsum dolor sit  amet consectetur adipisicing elit. Sequi dignissimos hic ex doloribus, quodesse corporis fugiat laborum repellendus </p>
+      <a href="#" class="btn btn-secondary">View Detaile</a>
+    </div>
+  </div>
+</div>
+
+  <div class=" text-center col-xl-3 col-md-5">
+    <div class="card pt-5">
+     <div class="gol bg-secondary rounded-circle"></div>
+      <div class="">
+        <h4>Haeding</h4>
+        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dignissimos hicex doloribus, quodesse corporis fugiat laborum repellendus</p>
+        <a href="#" class="btn btn-secondary">View Detaile</a>
+      </div>
+    </div>
+  </div>
+
+  <div class=" text-center col-xl-3 col-md-12 ">       
+      <div class="card pt-5" >
+       <div class="gol bg-secondary rounded-circle"></div>
+        <div class="">
+          <h4>Haeding</h4>
+          <p class="">Lorem ipsum dolor sit  amet consectetur adipisicing elit. Sequi dignissimos hicex doloribus, quodesse corporis fugiat laborum repellendus </p>
+          <a href="#" class="btn btn-secondary">View Detaile</a>
+        </div>
+      </div>
+   </div>
+</div>
+</div>
+
+<!-- ************************************ -->
+
+<div class="container pt-5">
+<div class="container row justify-content-evenly pt-5 border-top border-solid">
+  <div class="blow col-xl-8 col-md-8 pt-5">
+    <h3>First featurette headig. It'll blow your mind.</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate aliquid, eligendi, reiciendis delectus voluptatum harum placeat illum magnam quas cum facilis explicabo voluptatibus totam, porro cumque sequi quo necessitatibus deserunt.</p>
+  </div>
+
+  <div class="blow1 bg-secondary col-xl-3 col-md-3 text-center ">500x500</div>
+</div>
+</div>
+
+<!-- ********************************* -->
+
+  <div class="container pt-5">
+    <div class="container row justify-content-evenly pt-5 border-top border-solid">
+      <div class="blow1 bg-secondary col-xl-3 col-md-3 text-center ">500x500</div>
+
+      <div class="blow col-xl-8 col-md-8 pt-5">
+        <h3>Oh yeah, it's that good. See For ourself</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate aliquid, eligendi, reiciendis delectus voluptatum harum placeat illum magnam quas cum facilis explicabo voluptatibus totam, porro cumque sequi quo necessitatibus deserunt.</p>
+      </div>
+    </div>
+</div>
+
+<!-- ******************************** -->
+
+<div class="container pt-5">
+<div class="container row justify-content-evenly pt-5 border-top border-bottom border-solid ">
+  <div class="blow col-xl-8 col-md-8 pt-5">
+    <h3>And lastly, this one. Checmate.</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate aliquid, eligendi, reiciendis delectus voluptatum harum placeat illum magnam quas cum facilis explicabo voluptatibus totam, porro cumque sequi quo necessitatibus deserunt.</p>
+  </div>
+
+  <div class="blow1 bg-secondary col-xl-3 col-md-3 text-center ">500x500</div>
+</div>
+</div>
+    <hr>
+    <hr>
+
+    <h3>Q 3) What are the default Bootstrap text settings ?</h3>
+
+    ==>
+    <br>
+
+    it's a more than result for the bootstrap text setting
+
+    <p>more usefull of the Bootstrap 4 uses a default font-size of 16px, and its line-height is 1.5. The default
+      font-family is "Helvetica Neue", Helvetica, Arial, sans-serif. In addition, <br> all <b>p</b> elements have
+      margin-top: 0 and margin-bottom: 1rem</p>
+
+    <p> Bootstrap's global default font-size is 14px, with a line-height of 1.428.</p>
+
+    <hr>
+    <hr>
+
+    <h3> Q 4) What do you know about the Bootstrap Grid System ?</h3>
+
+    ==>
+    <br>
+
+    <p>Grid system is use to for a responsive your site you can seen the website at mobil,pc,tablet etc you can
+      responsive site then you can use the grid row</p>
+
+    <p>you can use more use for grid system than you can need the more department for grid </p>
+
+    <p>Bootstrap's grid system uses a series of containers, rows, and columns to layout and align content. It's built
+      with flexbox and is fully responsive. <br> Below is an example and an in-depth look at how the grid comes
+      together. New to or unfamiliar with flexbox</p>
+
+    <p>Bootstrap's grid system is built with flexbox and allows up to 12 columns across the page.</p>
+
+    <hr>
+    <hr>
+
+    <h3> Q 5) What is the diffrence between Bootstrap 4 and Bootstrap 5 ?</h3>
+
+    ==>
+    <p>Bootstrap 4 and Bootstrap 5 is a small diffrence it can class diffrence</p>
+
+    <p>Bootstrap 4 has five levels: xs, sm, md, lg, and xl. Bootstrap 5 has six levels: xs, sm, md, lg, xl, and xxl</p>
+
+    <p>Bootstrap 4 includes jquery and all associated plug-ins.</p>
+
+    <p>Jquery has been deleted and replaced with vanilla JS and several functional plug-ins in Bootstrap 5.
+    </p>
+
+    <hr>
+    <hr>
+
+    <h3> Q 6) What is a Button Group,and what is the class for a basic Button Group ?</h3>
+
+    ==>
+
+    <p>Button Groups in Bootstrap is a class of name “btn-group” which is used to create a series of buttons in groups
+      (without spaces) vertically or horizontally.</p>
+
+    <p>Syntax: This is the basic syntax of the button group class where each button has its own class of “btn”.</p>
+
+    <p>Bootstrap provides 4 button sizes which you can add directly to your buttons by adding an additional class of
+      “btn-group-*” to your “btn-group” class. No need to add separate classes to each button. </p>
+
+    <p>All 4 sizes can be used as follows</p>
+
+    <p> <b>Vertical Button Groups:</b> Bootstrap also supports vertical button groups stacked in a vertical manner
+      rather than horizontally. Use the class “btn-group-vertical” to create a vertical button group</p>
+
+    <hr>
+    <hr>
+
+    <h3> Q 7) How can you use Bootstrap to make thumbnails ?</h3>
+
+    ==>
+
+    <p>This chapter discusses about Bootstrap thumbnails. A lot of sites need a way to lay out images, videos, text,
+      etc, in a grid, and Bootstrap has an easy way to do this with thumbnails. To create thumbnails using Bootstrap</p>
+
+    <p>If you want to group multiple images, place them in an unordered list, and each list item will be floated to the
+      left</p>
+
+    <p>In Bootstrap, thumbnails show linked images in a grid structure with minimal required markups. Thumbnails help us
+      glance at images using smaller </p>
+
+    <hr>
+    <hr>
+
+    <h3> Q 8) In Bootstrap 4,what is flexbox ?</h3>
+
+    ==>
+
+    <p> <b>Flexbox</b> The biggest difference between Bootstrap 3 and Bootstrap 4 is that Bootstrap 4 now uses flexbox,
+      instead of floats, to handle the layout. </p>
+
+    <p>The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using
+      float or positioning.
+    </p>
+
+    <p>Set the direction of flex items in a flex container with direction utilities. In most cases you can omit the
+      horizontal class here as the browser default is row.</p>
+
+    <p>However, you may encounter situations where you needed to explicitly set this value </p>
+
+    <p>Use <b>.flex-row</b> to set a horizontal direction (the browser default), or <b>.flex-row-reverse</b> to start
+      the horizontal direction from the opposite side.</p>
+
+
+    <hr>
+    <hr>
+
+    <h3> Q 9) How can one create an alert in Bootstrap ?</h3>
+
+    ==>
+
+    <p>Bootstrap 5 provides an easy way to create predefined alert messages </p>
+
+    EX :
+
+    <div class="alert alert-success">
+      <strong>Success!</strong> This alert box could indicate a successful or positive action.
+    </div>
+
+    <div class="alert alert-primary">
+      <strong>Success!</strong> This alert box could indicate a successful or positive action.
+    </div>
+
+    <div class="alert alert-info">
+      <strong>Success!</strong> This alert box could indicate a successful or positive action.
+    </div>
+
+    <div class="alert alert-danger">
+      <strong>Success!</strong> This alert box could indicate a successful or positive action.
+    </div>
+
+    <p>Alerts are created with the .alert class, followed by one of the contextual classes .alert-success, .alert-info,
+      .alert-warning, .alert-danger, .alert-primary, .alert-secondary, .alert-light or .alert-dark</p>
+
+    <p>Alerts are available for any length of text, as well as an optional dismiss button. For proper styling, use one
+      of the eight required contextual classes</p>
+
+    <hr>
+    <hr>
+
+    <h3> Q 10) What is bootstrap card and how would you create one ?</h3>
+
+    ==>
+
+    <p>To create Bootstrap cards, you need to understand the card class and its customizations and layouts. </p>
+
+    <p>A basic Bootstrap card consists of a . card class with the . card-body class, allowing you to add text, images,
+      links, and other Bootstrap elements within a rounded border.</p>
+
+    <p>After researching and talking to professional developers, like Hubspot's Athena Ozanich, I've gained valuable
+      insights about Bootstrap cards. As a student and mentor, I've come to appreciate the flexibility and consistency
+      of Bootstrap cards. Let's now dive into the basics of working with Bootstrap cards.</p>
+
+    <p>Since cards are divs, they’ll span the entire width of the page by default. To set a width, you can apply CSS to
+      your cards or place them in a grid, as we’ll see later.</p>
+
+    <p>You can also distinguish the body text of the card from the title using the .card-text class.</p>
+
+  </div>
+
+</body>
+
+</html>
